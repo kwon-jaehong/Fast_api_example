@@ -1,5 +1,9 @@
 FAST API 연습
 
+------
+pip install fastapi 'uvicorn[standard]' requests
+------
+
 
 FAST API
 - 성능이 빠름
