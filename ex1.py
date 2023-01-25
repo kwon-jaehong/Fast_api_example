@@ -7,6 +7,14 @@ from fastapi import FastAPI
 # def index():
 #     return {"name":"재홍!"}
 
+BOOKS = {
+    'book_1':{"title":"title one","author":"author one"},
+    'book_2':{"title":"title two","author":"author two"},
+    'book_3':{"title":"title three","author":"author three"},
+    'book_4':{"title":"title four","author":"author four"},
+    'book_5':{"title":"title five","author":"author five"},
+}
+
 def create_app():
     '''
     앱 생성
@@ -23,6 +31,7 @@ def create_app():
     ## 미들웨어 정의
     
     ## 라우터 정의
+
     
     return app   
 
