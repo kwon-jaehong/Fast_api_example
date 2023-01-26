@@ -52,7 +52,9 @@ uvicorn ex1:app --reload --host=0.0.0.0 --port=32210
 curl 확인
 curl http://localhost:32210/date
 
-
+--------------------------------------------------
+docker build -t fastapi:0.1 .
+docker run -d -it --ipc=host -p 5000:5000 fastapi:0.1
 
 
 
