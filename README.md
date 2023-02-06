@@ -46,7 +46,7 @@ FastAPI 실행 명령어는
 -> uvicorn 파일이름:앱 객체 
 uvicorn ex1:app 
 
-uvicorn ex1:app --reload --host=0.0.0.0 --port=32210
+uvicorn main:app --reload --host=0.0.0.0 --port=8000
 -> reload는 코드 변경시 자동으로 저장되어 재시작되는 플래그
 
 curl 확인

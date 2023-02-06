@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request,Form,UploadFile,HTTPException,status
 from typing import Union
+import uvicorn
 
 app = FastAPI()
 @app.post("/")
@@ -18,3 +19,6 @@ async def upload( request: Request,filename: str = Form(...), filedata: Union[st
         
         
     return {"message": f"Successfuly uploaded "} 
+
+if __name__ == "__main__":
+    uvicorn.run(app,host="0.0.0.0",port=8000)
