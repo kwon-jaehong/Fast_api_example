@@ -10,6 +10,5 @@ line = sys.stdin.readline()
 
 monitor_data = json.loads(line)
 print(type(monitor_data),monitor_data)
-# curl "http://localhost:32210"
 
-# neuron-monitor | python monitorparsing.py
+# neuron-monitor | python3.7  monitorparsing.py
