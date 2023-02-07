@@ -1,3 +1,23 @@
+// {
+//     // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+//     // 기존 특성에 대한 설명을 보려면 가리킵니다.
+//     // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: FastAPI",
+//             "type": "python",
+//             "request": "launch",
+//             "module": "uvicorn",
+//             "args": [
+//                 "fastapiapp:app"
+//             ],
+//             "jinja": true,
+//             "justMyCode": true
+//         }
+//     ]
+// }
+
 {
     // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
     // 기존 특성에 대한 설명을 보려면 가리킵니다.
@@ -5,15 +25,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: FastAPI",
+            "name": "Python: 현재 파일",
             "type": "python",
             "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "fastapiapp:app"
-            ],
-            "jinja": true,
-            "justMyCode": true
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${fileDirname}",
+            // "args": ["--data_dir","/data/mrjaehong/handwriting_gen/today_study/transformers/","--model_name_or_path","bert-base-uncased","--output_dir","./output/","--do_train","--do_eval","--max_seq_len","512","--gradient_accumulation_steps","20","--num_image_embeds","3","--num_train_epochs","100","--patience","5"]
+            // "args": ["outputs/parseq/2022-12-30_05-54-26/epoch=97-step=29497-val_accuracy=99.5331-val_NED=99.5708.ckpt"]
         }
     ]
 }
